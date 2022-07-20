@@ -3,12 +3,11 @@
 --------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-
 /* --------------------------------------------
                 Common Styles
 --------------------------------------------- */
 body {
-    max-width: 1980px;
+    max-width: 1240px;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     padding: 0;
@@ -36,8 +35,6 @@ h1 {
     border-radius: 5px;
 }
 
-
-
 /* --------------------------------------------
                 Banner Section
 --------------------------------------------- */
@@ -56,7 +53,7 @@ h1 {
 .banner-image img {
     padding-top: 4%;
     align-items: center;
-    width: 581px;
+    width: 555px;
     height: 613px;
 }
 
@@ -102,11 +99,10 @@ main {
 }
 
 .event-section a.active,
-a:hover {
+.event-section a :hover {
     background-color: #DD0000;
     color: white;
 }
-
 
 /* --------------------------------------------
                 blogs Section
@@ -115,24 +111,29 @@ a:hover {
 .transfer-blog {
     margin-top: 5%;
     display: grid;
-    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+    gap: 20px;
     padding-bottom: 5%;
 }
 
-.transfer-blog img {
+.blog-thumblain img {
     width: 100%;
-    height: 100%;
+    height: 175px;
 
 }
 
-.transfer-blog p {
-    font-size: 20px;
+.blog p {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .blog {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
     border: 1px solid #E8E8E8;
     border-radius: 10px
 }
@@ -195,7 +196,6 @@ footer a {
     text-align: center;
 }
 
-
 /* --------------------------------------------
                 Mobile devices
 --------------------------------------------- */
@@ -207,7 +207,7 @@ footer a {
     main,
     .transfer-blog,
     .upcoming-blog,
-    .footer {
+    footer {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -251,6 +251,10 @@ footer a {
         display: none;
     }
 }
+
+/* --------------------------------------------
+                Tab devices
+--------------------------------------------- */
 
 @media screen and (min-width: 689px) and (max-width: 991px) {
     .banner-section {
