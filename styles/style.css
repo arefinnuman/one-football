@@ -7,7 +7,7 @@
                 Common Styles
 --------------------------------------------- */
 body {
-    max-width: 1240px;
+    max-width: 19800px;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     padding: 0;
@@ -149,7 +149,8 @@ main {
 }
 
 .see-more {
-
+    margin-left: 30%;
+    margin-bottom: 2%;
     text-align: center;
     justify-items: center;
     width: 100px;
@@ -165,6 +166,7 @@ main {
 }
 
 footer {
+    display: block;
     padding-top: 40px;
     padding-bottom: 20px;
     color: white;
@@ -240,13 +242,16 @@ footer a {
         text-align: center;
     }
 
+
     .banner-section h1 {
         font-size: 22px;
+        padding-right: 5%;
     }
 
     .banner-section p {
         font-size: 16px;
         font-weight: 100;
+        padding-right: 5%;
     }
 
     .banner-image img {
@@ -304,6 +309,7 @@ footer a {
         margin-left: 7%;
         margin-right: 4%;
         border-radius: 30px;
+
     }
 
     .banner-section h1 {
