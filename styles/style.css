@@ -63,8 +63,19 @@ h1 {
 }
 
 .banner-info p {
+    animation: flip 5s 3 4s;
     padding-bottom: 10px;
 }
+
+/* animation */
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
+
 
 /* --------------------------------------------
                 Events Section
@@ -136,6 +147,21 @@ main {
     align-content: center;
     border: 1px solid #E8E8E8;
     border-radius: 10px
+}
+
+.see-more {
+    text-align: center;
+    justify-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: #E8E8E8;
+    border: 1px solid #161616;
+}
+
+.see-more a {
+    font-weight: 900;
+    color: #161616;
+    text-decoration: none;
 }
 
 footer {
@@ -299,28 +325,26 @@ footer a {
     }
 
     .transfer-blog,
-    .upcoming-blog,
-    {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
+    .upcoming-blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 
-.hidden-tag {
-    display: block;
-    margin: 20px;
+    .hidden-tag {
+        display: block;
+        margin: 20px;
 
-    right: 0;
-    text-align: center;
-    width: 20%;
-    background-color: firebrick;
-    color: white;
-}
+        right: 0;
+        text-align: center;
+        width: 20%;
+        background-color: firebrick;
+        color: white;
+    }
 
-footer a {
-    padding: 10px;
-}
-
+    footer a {
+        padding: 10px;
+    }
 }
