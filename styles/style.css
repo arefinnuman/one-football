@@ -8,7 +8,7 @@
                 Common Styles
 --------------------------------------------- */
 body {
-    max-width: 1240px;
+    max-width: 1980px;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     padding: 0;
@@ -46,7 +46,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
-    margin-left: 8%;
+    margin-left: 7%;
     margin-right: 4%;
     border-radius: 30px;
 }
@@ -76,8 +76,7 @@ main {
 }
 
 .event-section {
-    margin-top: 5%;
-    margin-right: 3%;
+    margin: 4% 5%;
     padding: 3%;
     display: flex;
     flex-direction: column;
@@ -113,6 +112,16 @@ main {
     padding-bottom: 5%;
 }
 
+.transfer-blog img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.transfer-blog p {
+    font-size: 20px;
+}
+
 .blog {
     border: 1px solid #E8E8E8;
     border-radius: 10px
@@ -141,16 +150,54 @@ footer a {
     padding: 40px;
 }
 
+
+/* --------------------------------------------
+               Upcoming Section
+--------------------------------------------- */
+
+.upcoming-blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.upcoming-match {
+    margin: 5%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px
+}
+
+.upcoming-blog-thumblain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.upcoming-blog-thumblain img {
+    width: 100%;
+    padding: 20px;
+}
+
+.upcoming-blog-info {
+    text-align: center;
+}
+
+
 /* --------------------------------------------
                 Mobile devices
 --------------------------------------------- */
+
 
 @media screen and (max-width: 688px) {
 
     .banner-section,
     main,
     .transfer-blog,
-    footer {
+    .upcoming-blog,
+    .footer {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -193,6 +240,73 @@ footer a {
     hr {
         display: none;
     }
+}
 
+@media screen and (min-width: 689px) and (max-width: 991px) {
+    .banner-section {
+        width: 734px;
+        height: 398px;
+        background-color: #161616;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2%;
+        margin-left: 7%;
+        margin-right: 4%;
+        border-radius: 30px;
+    }
+
+    .banner-section h1 {
+        font-size: 22px;
+    }
+
+
+    .banner-image img {
+        padding-top: 15%;
+        align-items: center;
+        width: 323px;
+        height: 340px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .event-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: white;
+        text-align: center;
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+
+    .transfer-blog,
+    .upcoming-blog,
+    {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden-tag {
+    display: block;
+    margin: 20px;
+
+    right: 0;
+    text-align: center;
+    width: 20%;
+    background-color: firebrick;
+    color: white;
+}
+
+footer a {
+    padding: 10px;
+}
 
 }
