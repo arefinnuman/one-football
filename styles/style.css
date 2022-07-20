@@ -46,7 +46,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
-    margin-left: 4%;
+    margin-left: 8%;
     margin-right: 4%;
     border-radius: 30px;
 }
@@ -72,33 +72,31 @@ h1 {
 --------------------------------------------- */
 main {
     display: flex;
+
 }
 
 .event-section {
-    margin: 5%;
-    width: 312px;
-    height: 312px;
+    margin-top: 5%;
+    margin-right: 3%;
+    padding: 3%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 4%;
-    background: #161616;
+    height: 250px;
+    width: 312px;
+    background-color: #161616;
     border-radius: 10px;
 }
 
 .event-button {
-
-    text-align: center;
+    margin: 5%;
+    background-color: #DD0000;
     color: white;
-    height: 50px;
-    background: #DD0000;
+    padding: 10px 20px;
     border-radius: 10px;
-}
-
-.event-button a {
+    font-size: 18px;
     text-decoration: none;
-    color: white;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* --------------------------------------------
@@ -106,12 +104,13 @@ main {
 --------------------------------------------- */
 
 .transfer-blog {
-    padding-top: 5%;
+    margin-top: 5%;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+    padding-bottom: 5%;
 }
 
 .blog {
@@ -120,33 +119,26 @@ main {
 }
 
 footer {
-    width: 100vw;
-    position: absolute;
-    left: 0;
-    margin-top: 30px;
-    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     color: white;
     background: #161616;
     text-align: center;
     justify-content: center;
     align-items: center;
-
 }
 
 footer a {
+    margin-top: 60px;
+    justify-content: space-between;
+    padding: 40px;
     text-decoration: none;
     color: white;
-    display: flex;
 }
 
-.footer-anchor {
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-around;
-}
 
 .fa-brands {
-    padding: 20px;
+    padding: 40px;
 }
 
 /* --------------------------------------------
@@ -157,7 +149,8 @@ footer a {
 
     .banner-section,
     main,
-    .transfer-blog {
+    .transfer-blog,
+    footer {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -180,8 +173,25 @@ footer a {
         height: 245px;
     }
 
+    .event-section {
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 4%;
+        justify-content: center;
+        align-items: center;
+    }
+
     .hidden-tag {
         display: block;
+        margin: 20px;
+    }
+
+    footer a {
+        padding: 0px;
+    }
+
+    hr {
+        display: none;
     }
 
 
